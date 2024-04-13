@@ -1,0 +1,2 @@
+INSTRUCTIONER (SET TO PATH): 
+"Redigera systemets miljövariabler" -> "miljövariabler" -> "system" window -> "path" -> "redigera" -> "ny" -> "ok" -> "ok"
