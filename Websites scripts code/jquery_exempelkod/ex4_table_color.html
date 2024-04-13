@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery Exempel 4</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("tr:gt(6)").css("background-color", "#ed5");
+            $("tr:even").css("background-color", "#9b0");
+            $("tr:first").css("background-color", "#E74C3C").css("font-weight", "bold");
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>jQuery Exempel 4</h1>
+            <h2>Ändra tabellradernas färger</h2>
+        </header>
+        <section>
+            <table>
+                <tr>
+                    <td>Produkt</td>
+                    <td>Pris</td>
+                </tr>
+                <tr>
+                    <td>Mjölk</td>
+                    <td>10kr.</td>
+                </tr>
+                <tr>
+                    <td>Bröd</td>
+                    <td>20kr.</td>
+                </tr>
+                <tr>
+                    <td>Smör</td>
+                    <td>12kr.</td>
+                </tr>
+                <tr>
+                    <td>Skinka</td>
+                    <td>23kr.</td>
+                </tr>
+                <tr>
+                    <td>Pannkakor</td>
+                    <td>29kr.</td>
+                </tr>
+                <tr>
+                    <td>Korvbröd</td>
+                    <td>16kr.</td>
+                </tr>
+                <tr>
+                    <td>Juice</td>
+                    <td>9kr.</td>
+                </tr>
+                <tr>
+                    <td>Kalaspuffar</td>
+                    <td>23kr.</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>

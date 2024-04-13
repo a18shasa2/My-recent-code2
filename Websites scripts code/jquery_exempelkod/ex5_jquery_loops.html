@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery Exempel 5</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".knapp_summera").click(function() {
+                var summa = 0;
+                $(".number").each(function() {
+                    summa += (+this.innerHTML);
+                });
+                $(".resultat").text("Summa: " + summa);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>jQuery Exempel 5</h1>
+            <h2>Loopar i jQuery</h2>
+        </header>
+        <section>
+            <div class="number">5</div>
+            <div class="divider"></div>
+            <div class="number">14</div>
+            <div class="divider"></div>
+            <div class="number">46</div>
+            <div class="divider"></div>
+            <div class="number">19</div>
+            <div class="divider"></div>
+
+            <button class="knapp_summera">Summera talen</button>
+            <h2 class="resultat"></h2>
+        </section>
+    </div>
+</body>
+
+</html>

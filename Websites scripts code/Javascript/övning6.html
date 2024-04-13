@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Klicka på knappen för att jämföra värdena.</p>
+
+<button onclick="myFunction()">Jämför</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var valx = 20; 
+  var valy = 26; 
+  var greeting;
+  if (valx < valy) {
+    greeting = "X är mindre än Y";
+  } 
+  if (valx > valy) {
+    greeting = "X är större än Y";
+  } 
+  if (valx == valy) {
+    greeting = "X är lika med Y";
+  } 
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>

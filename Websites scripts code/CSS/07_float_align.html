@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Float & Alignment</title>
+      <style>
+         /* Internal CSS !DONT USE, Only here for examplem Use external css style sheet */
+         * {
+            box-sizing: border-box;
+         }
+
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+         }
+
+         .container {
+            /* Centering */
+            max-width: 960px;
+            margin: 30px auto;
+         }
+
+         /* The CSS clear property specifies what elements can float beside the cleared element and on which side  */
+
+         /* 
+         none - Allows floating elements on both sides. This is default
+         left - No floating elements allowed on the left side
+         right- No floating elements allowed on the right side
+         both - No floating elements allowed on either the left or the right side
+         inherit - The element inherits the clear value of its parent
+         */
+
+         /* The most common way to use the clear property is after you have used a float property on an element. */
+
+         .clr {
+            clear: both;
+         }
+
+         .box {
+            background: lightgray;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+         }
+
+         .box p {
+            /* Text Align */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+         }
+
+         /* Floating */
+
+         #box-2 {
+            float: left;
+            width: 68%;
+         }
+
+         #box-3 {
+            float: right;
+            width: 30%;
+         }
+      </style>
+   </head>
+
+   <body>
+      <div class="container">
+         <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+               impedit nulla optio? Neque vitae dolores quibusdam in officiis ea
+               rerum!
+            </p>
+         </div>
+         <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+               impedit nulla optio? Neque vitae dolores quibusdam in officiis ea
+               rerum!
+            </p>
+         </div>
+         <div id="box-3" class="box">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+               impedit nulla optio? Neque vitae dolores quibusdam in officiis ea
+               rerum!
+            </p>
+         </div>
+
+         <div class="clr"></div>
+
+         <div id="box-4" class="box">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+               impedit nulla optio? Neque vitae dolores quibusdam in officiis ea
+               rerum!
+            </p>
+         </div>
+      </div>
+   </body>
+</html>

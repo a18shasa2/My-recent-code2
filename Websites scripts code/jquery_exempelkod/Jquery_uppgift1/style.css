@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Trade+Winds&display=swap');
+
+    @font-face {
+        font-family: "Aller";
+        font-weight: 500;
+        font-style: normal;
+        src: url("./fonts/Aller_Bd.ttf") format("truetype");     
+     }
+        
+    @font-face {
+        font-family: "Museo Moderno";
+        font-weight: 500;
+        font-style: normal;
+        src: url("./fonts/MuseoModerno-VariableFont_wght.ttf") format("truetype");  
+    
+     }
+     
+    @font-face {
+        font-family: "Bree Serif";
+        font-weight: 500;
+        font-style: normal;
+        src: url("./fonts/Bree_Serif.otf");  
+    
+     }
+
+    p {
+    font-family: helvetica, arial, sans-serif; 
+    font-size: 14px; 
+    padding: 1.5px; 
+    color: #222;
+    font-weight: normal;
+    }
+         
+    h2 {
+    font-family: "Trade Winds", arial, sans-serif; 
+    font-size: 24px; 
+    padding: 2px; 
+    color: #009;
+    font-weight: bold;
+
+    }
+        
+    h1 {
+    font-family: "Bree Serif", arial, sans-serif; 
+    font-size: 30px; 
+    padding: 2px; 
+    color: #CC0099;
+    font-weight: bold;
+    }
+        
+    h3 {
+    font-family: "Aller", sans-serif, arial; 
+    font-size: 14px; 
+    padding: 2px; 
+    color: #009;
+    font-weight: bold;
+    }
+        
+    .em{
+    font-weight: bold;  
+    }
+        
+    .space{
+    padding: 16px;  
+    }
+
+	
+    span.underline { 
+    color: lightblue; 
+    text-decoration: none; 
+} 
+    span.underline a { 
+    color: darkblue; 
+    text-decoration: underline; 
+} 
+
+    .navbar-nav .nav-link {
+		color: lightblue;
+		background-color: transparent;
+		border-bottom: .25rem solid transparent;
+    text-decoration: none;
+	}
+	.navbar-nav .nav-link:hover,
+	.navbar-nav .nav-link:focus {
+		color: darkblue !important;
+		border-bottom-color: darkblue;
+	}
+
+
+
+    body {
+         }
+
+    .wide_image {
+         }
+
+    .container {
+            background: #FFFF;
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 15px;
+            max-width: 960px;
+             /*centerera container*/ 
+            margin: 0 auto;
+            text-align: center;
+         }
+
+    .container p {
+            /* Text Align */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+         }
+
+         /* Floating */
+   
+    header {;
+            width:100%;
+            background-image:url("blommor.png");
+         }
+
+    section {
+            float: left;
+            padding: 12px;
+            width: 600px;
+         }
+
+  aside {  
+      float: left; 
+      padding: 12px;
+      margin-left: 10px;
+      width: 300px;
+         }
+
+
+  footer {
+            clear: both; 
+
+         }
+
+         r {
+  color:red;
+         }
+
+  .clr {
+            clear: both;
+         }
+
+  .box {
+            background: #FFFF;
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 15px;
+         }
+
+  .box p {
+            /* Text Align */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+         }
+
+         /* Floating */
+   
+  #box-1 {
+            float: left;
+            width: 960px;
+         }
+
+  #box-2 {
+            float: left;
+            width: 600px;
+            margin-left: 10px;
+         }
+
+  #box-3 {
+            float: right;
+            width: 290px;
+         }
+
+  #box-4 {
+            float: left;
+            width: 960px;
+         }
+
+  .container32 {
+            /* Centering */
+            max-width: 960px;
+            margin: 30px auto;
+         }
+
+  img {
+         max-width: 100%;
+         }
+
+  .not_visible {
+         }
+
+
+      /* Navigeringsmeny */
+  .navbar1 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: green;
+            border-radius: 5px;
+            overflow: auto;
+         }
+
+  .navbar1 li {
+            /* display: inline-block; */
+            float: left;
+         }
+
+  .navbar1 li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+         }
+
+  .navbar1 li a:hover {
+            background-color: deeppink;
+            color: lightgray;
+         }
+
+    /*Vid en upplösning på 700px eller mindre på skärmar, då ändras bakgrunden i wrappern till röd och aside- och section-sektionenernas innehåll anpassas till wrappern:s bredd.*/ 
+    /*Tablet upplösning.*/ 
+@media (max-width: 700px){
+   .container {
+            background: red;
+         }
+    
+    aside {  
+            float: left;
+    /*ändras tillsammans med upplösningen*/ 
+            max-width: 90%;
+         } 
+    section { 
+            /*ändras tillsammans med upplösningen*/ 
+            max-width: 90%;
+         }
+    
+    .not_visible {
+                display: none;
+         }
+
+    
+         }
+
+    /*Mobil upplösning.*/ 
+@media (max-width: 400px){
+   .container {
+            background: green;
+         }
+    
+    aside {  
+            float: left;
+    /*ändras tillsammans med upplösningen*/ 
+            max-width: 90%;
+         } 
+    section { 
+            /*ändras tillsammans med upplösningen*/ 
+            max-width: 90%;
+         }
+    
+    .not_visible {
+                display: none;
+         }
+
+    
+         }
+
+    /*När webbsidan ska skrivas ut, då ändras bakgrunden i wrappern till gul och både menyn och stora bilder försvinner*/ 
+@media print{
+    .container {
+            background: yellow;
+         }
+    
+    .navbar1 {
+            display: none;
+         }
+    
+    .wide_image {
+         display: none;
+         }
+    
+    }

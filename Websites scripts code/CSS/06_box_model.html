@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Box Model / Margin & Padding</title>
+      <style>
+         /* Internal CSS !DONT USE, Only here for examplem Use external css style sheet */
+         /* CSS Reset */
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         .box {
+            background: lightgray;
+            border: 2px green solid;
+            width: 500px;
+
+            /* padding on all sides */
+            padding: 20px;
+
+            /* padding per side */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* padding shorthand = top, right, bottom, left */
+            padding: 40px 30px 10px 20px;
+
+            /* padding shorthand = top/bottom left/right */
+            padding: 20px 10px;
+
+            /* margin on all sides */
+            margin: 20px;
+
+            /* margin per side */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            /* margin shorthand = top, right, bottom, left */
+            margin: 40px 30px 10px 20px;
+
+            /* margin shorthand = top/bottom left/right */
+            margin: 20px 10px;
+         }
+
+         .box h3 {
+            padding-bottom: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="box">
+         <h3>Box One</h3>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+            recusandae vel et veniam quidem totam quam id. Quam, numquam
+            laborum.
+         </p>
+      </div>
+      <div class="box">
+         <h3>Box Two</h3>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa,
+            recusandae vel et veniam quidem totam quam id. Quam, numquam
+            laborum.
+         </p>
+      </div>
+   </body>
+</html>
+
+<!-- Box Model: Padding, Border, Margin and the actual content -->
+
+<!-- 
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent 
+-->
+
+<!-- The CSS padding properties are used to generate space around an element's content, inside of any defined borders. -->
+<!-- The CSS border properties allow you to specify the style, width, and color of an element's border. -->
+<!-- The CSS margin properties are used to create space around elements, outside of any defined borders. -->

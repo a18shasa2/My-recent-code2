@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="sv" >
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Shafir Sabbag</title>
+      <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+    <script>
+        $(document).ready(function() {
+            $(".knapp_animera").click(function() {
+                $("#star_image").animate({
+                    width: "500px",
+                    opacity: 0,
+                }, 200);
+            })
+        })
+
+
+        $(document).ready(function() {
+            $("#star_image").mouseenter(function() {
+                $(this).css("border", "5px solid green").css("width", "300px").css("height", "300px");
+            }).mouseleave(function() {
+                $(this).css("border", "0px").css("width", "200px").css("height", "200px");
+            })
+        })
+        
+                $(document).ready(function() {
+            $("#text").text("Detta är ett meddelande!");
+        })
+
+        $(document).ready(function() {
+            $(".knapp_textmassa").click(function() {
+                $(".textmassa").toggle();
+            })
+            $(".knapp_rubrik").click(function() {
+                $ny_rubrik = $(".rubrik_text").val();
+                $("#huvudrubrik").text($ny_rubrik);
+            })
+            $(".knapp_lista").click(function() {
+                $(".shopping_lista").append("<li>Pannkakor</li>");
+            })
+        }) 
+
+        $(document).ready(function() {
+            $(".knapp_rubrikfarg").click(function() {
+                $(".navbar1").css("background", "red");
+            })
+        })
+
+        $(document).ready(function() {
+            $(".knapp_rubrikfarg_rubric").click(function() {
+                $("h2").css("color", "green");
+            })
+        })
+    </script>
+       
+       
+   </head>
+    
+  <body style="background-color:#eee">                  
+     <div class="container">         
+       <nav>
+           <!-- Navigeringsmenyn-->
+            <ul class="navbar1">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="forklaring.html">Förklaring</a></li>
+                <!--li><a href="referenser.html">Referenser</a></li -->
+            </ul>
+       </nav> 
+           
+    <header>
+        <div class="header" >
+            <h1>Min webbsida</h1> 
+        </div>
+    </header>
+
+     <section> 
+         <p><strong>Klicka på bilden för att göra den osynlig.</strong></p>
+         <img src="star_image.png" id="star_image" class="knapp_animera" class=wide_image alt="Star image"  width= 200px height=200px>         
+         <div id="section" class="section">
+             
+             <!-- Brödtext -->
+         <p id=text></p>
+        <button class="knapp_rubrikfarg">Klicka här för att ändra färgen på navigeringsmenyn</button>
+        <br>
+        <br>
+        <button class="knapp_rubrikfarg_rubric">Klicka här för att ändra färgen på rubrikerna</button>
+             
+         <p><strong>Skriv den nya rubriken här</strong></p>
+            <input type="text" class="rubrik_text" />
+            <button class="knapp_rubrik">Ändra rubrik</button>
+            <h2 id="huvudrubrik">Stycke</h2>
+             
+            <button class="knapp_textmassa">Klicka här för att dölja eller visa nedanstående text</button>
+             <p class=textmassa>
+               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+         </div>
+    </section>         
+            
+            <aside>
+                <div id="aside" class="aside">
+                    <!-- Kontaktinformation -->
+                    <h2>Kontakt</h2>
+                        <p>
+                            <strong>Telefon:</strong> xxx-xxxxx<br>
+                            <strong>Email:</strong> xxx@xxxx.com
+                        </p>
+                    <img src="blommor.png" height="48" width="160" style="margin-left:160px;" alt="">
+                    <img src="blommor.png" height="48" width="160" style="margin-left:140px;" alt="">
+                    <img src="blommor.png" height="48" width="160" style="margin-left:120px;" alt="">   
+                    <img src="blommor.png" height="48" width="160" style="margin-left:100px;" alt="">
+                </div>  
+        </aside>
+ 
+            
+    <footer>
+        <!-- Byline:n -->
+        <div class="footer">
+            <p> Webbsidan är skapad av Shafir Sabbag. 
+            </p>
+         </div>
+    </footer>
+                     
+    </div>           
+  </body>
+
+</html>

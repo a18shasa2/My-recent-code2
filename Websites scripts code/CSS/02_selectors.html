@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Selectors CSS</title>
+      <style>
+         /* Internal CSS !DONT USE, Only here for examplem Use external css style sheet */
+         /* Element Selectors */
+         body {
+            background-color: chartreuse;
+         }
+
+         /* ID Selector (#)*/
+         #red-heading {
+            color: red;
+         }
+
+         #welcome {
+            background-color: lightgray;
+         }
+
+         /* Class Selector (.) */
+         .secondary-heading {
+            color: green;
+         }
+
+         /* Multiple Selectors */
+         #welcome,
+         #about {
+            border: 1px solid black;
+            padding: 5px;
+            margin-bottom: 10px;
+         }
+
+         /* Nested Selectors */
+         #about p {
+            font-size: 20px;
+         }
+      </style>
+   </head>
+
+   <body>
+      <div id="welcome">
+         <h1 id="red-heading">Welcome</h1>
+         <!-- Named convention. Try not to use something like the color because it may be change later on and make no sense, try to use lower case as it is case sensitive -->
+         <h2 class="secondary-heading">Another Heading</h2>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque sit
+            eaque officiis debitis incidunt nesciunt pariatur consequatur,
+            quibusdam doloribus ut!
+         </p>
+      </div>
+
+      <div id="about">
+         <h2>About</h2>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque sit
+            eaque officiis debitis incidunt nesciunt pariatur consequatur,
+            quibusdam doloribus ut!
+         </p>
+      </div>
+   </body>
+</html>

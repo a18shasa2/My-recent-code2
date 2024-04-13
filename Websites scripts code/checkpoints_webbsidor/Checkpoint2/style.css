@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700');
+    
+    @font-face {
+        font-family: "Aller";
+        font-weight: 500;
+        font-style: normal;
+        src: url("./fonts/Aller_Bd.ttf") format("truetype");     
+     }
+        
+    @font-face {
+        font-family: "Museo Moderno";
+        font-weight: 500;
+        font-style: normal;
+        src: url("./fonts/MuseoModerno-VariableFont_wght.ttf") format("truetype");  
+    
+     }
+        
+    p {
+    font-family: helvetica, arial, sans-serif; 
+    font-size: 14px; 
+    padding: 1.5px; 
+    color: #222;
+    font-weight: normal;
+    text-indent: 26px;
+    }
+         
+    h1 {
+    font-family: "Roboto Condensed", arial, sans-serif; 
+    font-size: 26px; 
+    padding: 2px; 
+    color: silver;
+    font-weight: bold;
+        
+    letter-spacing: 2px;
+/* width and color of rubric´s rubric */
+        -webkit-text-fill-color: #009;
+        -webkit-text-stroke-width: 1px;
+        
+text-shadow: 2px 2px black; /* width and color of rubric´s shadow */
+
+    }
+        
+    h2 {
+    font-family: "Museo Moderno", sans-serif, arial; 
+    font-size: 18px; 
+    padding: 2px; 
+    color: #009;
+    font-weight: bold;
+    }
+        
+    h3 {
+    font-family: "Aller", sans-serif, arial; 
+    font-size: 14px; 
+    padding: 2px; 
+    color: #009;
+    font-weight: bold;
+    }
+        
+    .em{
+    font-weight: bold;  
+    }
+        
+    .space{
+    padding: 16px;  
+    }
+
+	
+span.underline { 
+    color: lightblue; 
+    text-decoration: none; 
+} 
+span.underline a { 
+    color: darkblue; 
+    text-decoration: underline; 
+} 
+
+.navbar-nav .nav-link {
+		color: lightblue;
+		background-color: transparent;
+		border-bottom: .25rem solid transparent;
+    text-decoration: none;
+	}
+	.navbar-nav .nav-link:hover,
+	.navbar-nav .nav-link:focus {
+		color: darkblue !important;
+		border-bottom-color: darkblue;
+	}

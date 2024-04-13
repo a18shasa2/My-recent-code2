@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Inline & Block Display</title>
+      <style>
+         /* Internal CSS !DONT USE, Only here for examplem Use external css style sheet */
+         * {
+            /* So Padding dont affect the width */
+            box-sizing: border-box;
+         }
+
+         li {
+            display: inline;
+         }
+
+         li a {
+            padding-right: 20px;
+         }
+
+         img {
+            display: block;
+            margin: auto;
+         }
+
+         .box {
+            width: 33.1%;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: inline-block;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Normally Block -->
+      <ul>
+         <li><a href="#">HTML</a></li>
+         <li><a href="#">CSS</a></li>
+         <li><a href="#">Javascript</a></li>
+      </ul>
+
+      <br /><br />
+
+      <!-- Normally Inline -->
+      <img src="./img/symbol.png" alt="My Image" />
+
+      <br /><br />
+      <div class="box">
+         <!-- Both inline and Block. Not possible to add width to inline elements hence the combination -->
+         <h3>Heading</h3>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            accusantium laboriosam velit maiores quis eligendi iure esse. Sint
+            provident doloribus dolore, incidunt alias dolorem doloremque
+            maiores iusto quisquam corporis consectetur.
+         </p>
+      </div>
+      <div class="box">
+         <h3>Heading</h3>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            accusantium laboriosam velit maiores quis eligendi iure esse. Sint
+            provident doloribus dolore, incidunt alias dolorem doloremque
+            maiores iusto quisquam corporis consectetur.
+         </p>
+      </div>
+      <div class="box">
+         <h3>Heading</h3>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            accusantium laboriosam velit maiores quis eligendi iure esse. Sint
+            provident doloribus dolore, incidunt alias dolorem doloremque
+            maiores iusto quisquam corporis consectetur.
+         </p>
+      </div>
+   </body>
+</html>

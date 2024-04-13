@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+    
+    @font-face {
+        font-family: "Aller";
+        font-weight: 500;
+        font-style: normal;
+        src: url("./fonts/Aller_Bd.ttf") format("truetype");     
+     }
+        
+    @font-face {
+        font-family: "Museo Moderno";
+        font-weight: 500;
+        font-style: normal;
+        src: url("./fonts/MuseoModerno-VariableFont_wght.ttf") format("truetype");  
+    
+     }
+        
+    p {
+    font-family: helvetica, arial, sans-serif; 
+    font-size: 14px; 
+    padding: 1.5px; 
+    color: #222;
+    font-weight: normal;
+    text-indent: 26px;
+    }
+         
+    h2 {
+    font-family: "Roboto Condensed", arial, sans-serif; 
+    font-size: 26px; 
+    padding: 2px; 
+    color: #009;
+    font-weight: bold;
+
+    }
+        
+    h1 {
+    font-family: "Museo Moderno", sans-serif, arial; 
+    font-size: 18px; 
+    padding: 2px; 
+    color: #009;
+    font-weight: bold;
+    }
+        
+    h3 {
+    font-family: "Aller", sans-serif, arial; 
+    font-size: 14px; 
+    padding: 2px; 
+    color: #009;
+    font-weight: bold;
+    }
+        
+    .em{
+    font-weight: bold;  
+    }
+        
+    .space{
+    padding: 16px;  
+    }
+
+	
+span.underline { 
+    color: lightblue; 
+    text-decoration: none; 
+} 
+span.underline a { 
+    color: darkblue; 
+    text-decoration: underline; 
+} 
+
+.navbar-nav .nav-link {
+		color: lightblue;
+		background-color: transparent;
+		border-bottom: .25rem solid transparent;
+    text-decoration: none;
+	}
+	.navbar-nav .nav-link:hover,
+	.navbar-nav .nav-link:focus {
+		color: darkblue !important;
+		border-bottom-color: darkblue;
+	}
+
+
+
+         body {
+         }
+
+
+
+         .container {
+            background: #FFFF;
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 15px;
+            max-width: 960px;
+            margin: 10px;
+            text-align: center
+         }
+
+         .container p {
+            /* Text Align */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+         }
+
+         /* Floating */
+   
+         header {
+            height: 140px;
+             width: 950px;
+         }
+
+         section {
+            float: left;
+            padding: 12px;
+            width: 600px;
+         }
+
+  aside {  
+      float: right; 
+      width: 300px;
+      padding: 10px;
+      margin-left: 10px;
+         }
+
+
+         footer {
+            clear: both; 
+             height: 200px;
+            width: 960px;
+
+         }
+
+         r {
+  color:red;
+         }
+

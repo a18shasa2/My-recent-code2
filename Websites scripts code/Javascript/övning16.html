@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Pris/kg:</p><input id="pris" value="" />
+
+<p>Vikt (kg):</p><input id="vikt" value="" />
+
+<br><br>
+<button onclick="myFunction()">Beräkna pris</button>
+
+<br><br>
+<a>Beräknat pris</a> <a id="demo"></a>
+
+<p>Betalat:</p><input id="betala" value="" />
+
+<br><br>
+<button onclick="myFunction()">Beräkna växel</button>
+
+<br><br>
+<a>Att få tillbaka</a> <a id="demo1"></a>
+
+<script>
+function myFunction() {
+  var vikt;
+  vikt = document.getElementById("vikt").value;
+  var pris, voteable;
+  pris = document.getElementById("pris").value;
+  var calc;
+  calc = vikt * pris;
+  document.getElementById("demo").innerHTML = vikt * pris;
+  //voteable = (age < 18) ? "Too young":"Old enough";
+  //document.getElementById("demo").innerHTML = voteable + " to vote.";
+  var betala;
+  betala = document.getElementById("betala").value;
+  document.getElementById("demo1").innerHTML = betala - calc;
+}
+</script>
+
+</body>
+</html>
