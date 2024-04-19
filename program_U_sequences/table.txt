@@ -1,0 +1,4 @@
+ChromA 2 22
+ChromB 24 28
+ChromC 32 38
+ChromD 42 50
