@@ -1,0 +1,8 @@
+install.packages("metafor")
+
+library(metafor);
+OR=c(1.5,1.5,1.3); # Odds ratios
+LL=c(0.833,0.75,0.867); # Lower Limit of 95% CI
+SE=(log(LL)-log(OR))/-1.96; # Calculate standard errors
+Res <- rma(yi=log(OR), sei=SE, method="FE"); # FE = Fixed effect model to calculate pooled OR
+forest(Res, trans=exp, refline=1, xlab="Odss Ratio (95%CI)", slab=c("A","B","C"), mlab="Pooled")
