@@ -17,7 +17,7 @@ livestream_length = len(livestream)
 while livestream_zero < livestream_length:
     #PART1: VideoSubFinder automatization using command prompt shell.
     print("Frames are generating. Wait.")
-    os.system(f'VideoSubFinderWXW.exe -c -r -ccti -i Movie/{livestream[livestream_zero]} -be 0.07 -te 0.27')
+    os.system(f'VideoSubFinderWXW.exe -c -r -ccti -i "Movie/{livestream[livestream_zero]}" -be 0.07 -te 0.27')
 
     #Part 2: Converting the black-white images to text-files using OCR tesserect.
     arr = os.listdir('TXTImages')
@@ -96,7 +96,7 @@ while livestream_zero < livestream_length:
         
     #PART3.5: VideoSubFinder export subtitles.
     livestream_srt = livestream[livestream_zero] + ".srt"
-    os.system(f'VideoSubFinderWXW.exe -cstxt Movie_Subtitles/{livestream_srt}')
+    os.system(f'VideoSubFinderWXW.exe -cstxt "Movie_Subtitles/{livestream_srt}"')
 
     #PART 4: Extract the videos.
     from collections import defaultdict
@@ -106,7 +106,7 @@ while livestream_zero < livestream_length:
     current_directory = os.getcwd()
     Cut_directory = current_directory + '/Movie_Cut'
     os.chdir(Cut_directory)
-    os.system(f'mkdir {livestream[livestream_zero]}')
+    os.system(f'mkdir "{livestream[livestream_zero]}"')
     new_livestream_folder_directory = current_directory + '/Movie_Cut/' + livestream[livestream_zero]
     os.chdir(new_livestream_folder_directory)
 
@@ -155,7 +155,7 @@ while livestream_zero < livestream_length:
             subclip.write_videofile(filename)
 
 
-    #os.system(f'mkdir {livestream[livestream_zero]}')
+    #os.system(f'mkdir "{livestream[livestream_zero]}"')
     os.chdir(current_directory)
     
     livestream_zero = livestream_zero + 1
