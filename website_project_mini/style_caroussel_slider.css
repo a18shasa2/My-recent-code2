@@ -1,0 +1,72 @@
+/*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.carousel {
+  width: 540px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  width: 25%;
+  height: 100%;
+}
+
+#carousel-1:checked ~ .carousel-inner {
+  transform: translateX(0);
+}
+
+#carousel-2:checked ~ .carousel-inner {
+  transform: translateX(-25%);
+}
+
+#carousel-3:checked ~ .carousel-inner {
+  transform: translateX(-50%);
+}
+
+#carousel-4:checked ~ .carousel-inner {
+  transform: translateX(-75%);
+}
+
+.carousel-slide {
+  transition: opacity 0.3s ease-in-out;
+}
+
+#carousel-1:checked ~ .carousel-indicators .carousel-indicator-1,
+#carousel-2:checked ~ .carousel-indicators .carousel-indicator-2,
+#carousel-3:checked ~ .carousel-indicators .carousel-indicator-3,
+#carousel-4:checked ~ .carousel-indicators .carousel-indicator-4 {
+  background-color: #333;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-inputs {
+  display: none;
+}
