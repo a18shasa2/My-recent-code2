@@ -1,0 +1,4 @@
+COMMAND FOR ENCRYPTION:
+Users/Guest/Downloads/ffmpeg -y -i video_input.mp4 -hls_time 9 -hls_key_info_file enc.keyinfo -hls_playlist_type vod -hls_segment_filename "segmentNo%d.ts" video_output.m3u8
+
+Note: Need key-file, m3u8-file, NOT keyinfo-file loaded in folder AND key-file have to be uploaded to the website for the video to be played on the website or else it will not play.
