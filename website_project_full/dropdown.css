@@ -1,0 +1,96 @@
+ /* beg login button*/
+               .button{background:transparent;border:1px solid rgba(0,0,0,.25);border-radius:4px;box-sizing:border-box;color:rgba(0,0,0,.6)!important;display:block;font-size:13px;font-weight:600;line-height:40px;padding:0 2em;text-align:center;text-transform:uppercase}p .button{margin:5px 0}.button:not(.button--cta):not(.button--more):hover{border-color:rgba(0,0,0,.35)}.-inverse .button:not(.button--cta):not(.button--more),.button:not(.button--cta):not(.button--more).-inverse{background:transparent;border-color:#fff;color:#fff!important}.-inverse .button:not(.button--cta):not(.button--more):hover,.button:not(.button--cta):not(.button--more).-inverse:hover{border-color:#f0f0f0;color:#f0f0f0!important}.button svg{fill:rgba(0,0,0,.3);display:inline;margin:-3px 4px 0 0;vertical-align:middle}.button--cta{background-color:#63cc98;border-color:transparent;color:#fff!important}.button--cta:disabled{color:hsla(0,0%,100%,.5)!important}.button--cta:hover{background-color:#37a08e}.button--more{background-color:#7db9d8;border-color:transparent;color:#fff!important;display:inline-block;text-transform:none}.button--more:hover{background-color:#75b5d6}.button--menu{line-height:32px;padding:0 0.5em}.button--alternative{background-color:#2e4b64;border-color:transparent;color:#fff!important;display:inline-block;text-transform:none}.button--block{display:block;width:100%}@media screen and (min-width:960px){.button:not(.button--block){display:inline-block;margin-right:10px}}
+    .button--menu123{line-height:32px;padding:0 0.2em}
+    .button--menu123:hover{background-color:#1b1b1b}
+
+    .button--menu1234{background:#0088cc;line-height:32px;padding:0 0.2em;color:#fff!important}
+    .button--menu1234:hover{background-color:blue}
+        /*end of login button settings*/
+
+/*drop down button settings*/
+        .dropbtn {
+background:transparent;border:1px solid rgba(0,0,0,.25);border-radius:4px;box-sizing:border-box;color:rgba(0,0,0,.6)!important;display:block;font-size:12.2px;font-weight:600;line-height:40px;padding:0 2em;text-align:center;margin:0px 20px 0 0;line-height:32px;padding:0 0.5em;
+}
+        
+.dropbtn:hover, .dropbtn:focus {
+background-color:#1b1b1b
+}
+        
+.navbar-toggler:hover, .navbar-toggler:focus {
+background-color:#1b1b1b
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+        
+.show {display: block;}
+        /*end of drop down button settings*/
+        
+             /* navigaiton bar settings*/
+         .button_nav_bar2 {
+            display: block;
+            width: 130px;
+            padding: 10px;
+            background: #63cc98;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+         }
+
+         .button_nav_bar2:hover {
+            background-color: #37a08e;
+            cursor: pointer;
+            text-decoration: underline;
+         }
+        
+                 .button_nav_bar3 {
+            display: block;
+            width: 130px;
+            padding: 10px;
+            background: silver;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+         }
+
+         .button_nav_bar3:hover {
+            background-color: black;
+            cursor: pointer;
+            text-decoration: underline;
+         }
+         /* navigaiton bar settings*/
+
