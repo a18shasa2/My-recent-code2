@@ -1,0 +1,11 @@
+Run server locally: 
+- Download and install "XAMPP" here: https://www.apachefriends.org/download.html
+- Open "XAMPP Control Panel". 
+- Click on "Start" for "Apache" and "Start" for "MySQL". 
+- Place website-files in "htdocs" folder.
+- In the web browser, write "localhost" to open the index-page.
+- The SQL-database is called "phpmyadmin". Access it by writing "localhost/phpmyadmin" in the web browser. The data should be controlled by phpmyadmin and not hard-coded, ideally.  
+
+Note: index-page = first page. 
+Note: html-pages can be run directly in web browser. 
+      php-pages must be run through https/server in web browser and cannot be run directly. 
