@@ -1,0 +1,6 @@
+List of package versions
+- srt 3.5.3  
+- moviepy 1.0.3   
+- python 3.1.2    
+- VideoSubFinder 6.10.0
+- Tesseract 5.3.3
