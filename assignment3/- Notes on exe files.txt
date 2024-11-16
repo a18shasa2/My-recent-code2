@@ -1,0 +1,1 @@
+Place the exe-files for Samtools (and similar) inside the "bin" folder in Cygwin on Windows. 
